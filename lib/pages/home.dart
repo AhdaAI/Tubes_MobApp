@@ -139,60 +139,62 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 300,
-              child: Image.asset('images/ahda.jpg'),
-            ),
-            const Text(
-              'Ahda Akmalul Ilmi',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-            ),
-            const Text('1101202381')
-          ],
-        ),
-        const SizedBox(
-          width: 20,
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 300,
-              child: Image.asset(
-                  'images/placeholder.png'), // Ganti placeholder jadi nama file fotonya
-            ),
-            const Text(
-              'Faris',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-            ),
-            const Text('nim')
-          ],
-        ),
-        const SizedBox(
-          width: 20,
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 300,
-              child: Image.asset(
-                  'images/placeholder.png'), // Ganti placeholder jadi nama file fotonya
-            ),
-            const Text(
-              'Indah',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-            ),
-            const Text('nim')
-          ],
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 300,
+                child: Image.asset('images/ahda.jpg'),
+              ),
+              const Text(
+                'Ahda Akmalul Ilmi',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ),
+              const Text('1101202381')
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 300,
+                child: Image.asset(
+                    'images/faris.jpg'), // Replace placeholder with the actual image file name
+              ),
+              const Text(
+                'Faris Candra Yoga Pratama',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ),
+              const Text('1101204354')
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 300,
+                child: Image.asset(
+                    'images/indah.jpg'), // Replace placeholder with the actual image file name
+              ),
+              const Text(
+                'Indah Nurul Hikmah',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ),
+              const Text('1101204191')
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
