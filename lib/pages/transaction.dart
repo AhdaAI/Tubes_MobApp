@@ -91,7 +91,12 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
   }
 }
 
-class TransactionAddPage extends StatelessWidget {
+class TransactionAddPage extends StatefulWidget {
+  @override
+  _TransactionAddPage createState() => _TransactionAddPage();
+}
+
+class _TransactionAddPage extends State<TransactionAddPage> {
   final TextEditingController nimController = TextEditingController();
   final TextEditingController namaController = TextEditingController();
   final TextEditingController nilaiController = TextEditingController();
