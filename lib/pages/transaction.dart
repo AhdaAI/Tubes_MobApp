@@ -141,9 +141,9 @@ class _TransactionAddPage extends State<TransactionAddPage> {
                 color: Colors.grey,
               ),
               onChanged: (String? newValue) {
-                // setState(() {
-                //   selectedCategory = newValue!;
-                // });
+                setState(() {
+                  selectedCategory = newValue!;
+                });
                 selectedCategory = newValue!;
               },
               items: categories.map<DropdownMenuItem<String>>((String value) {
